@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="/js/validation.js" defer></script>
+</head>
+<body>
+    <img src="logo-transparent-png.png" alt="logo" width="90px" height="75px">
+    <h1>Register</h1>
+    
+    <form action="process-signup.php" method="post" id="signup" novalidate>
+        <div class="form-inputs">
+            <br>
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" placeholder="enter">  <br><br>
+            <!-- array key -->
+        
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" placeholder="abc@mail.com"><br><br>
+        
+            <label for="password">PASSWORD:</label>
+            <input class="password" type="password" id="password" name="password" placeholder="8+ characters, 1+ letters, 1+ numbers"><br><br>
+        
+            <label for="password_confirmation">REPEAT PASSWORD:</label>
+            <input type="password" id="password_confirmation" name="password_confirmation" placeholder="retype password above">
+            
+        
+        <br><br>
+        <button>Sign up</button>
+        <p>Have an account? <span><a href="login.php">Log in</a></span></p>
+    </div>
+    </form>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
